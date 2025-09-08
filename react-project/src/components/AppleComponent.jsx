@@ -1,5 +1,12 @@
+import './AppleComponent.css';
+
 const AppleComponent = () => {
-    return <h1>Apple Component</h1>;
+  return (
+    <div className="apple-container">
+      <h1>Apple</h1>
+      <p>Think different.</p>
+    </div>
+  );
 };
 
 export default AppleComponent;
