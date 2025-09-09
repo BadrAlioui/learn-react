@@ -1,14 +1,23 @@
-import GoogleComponent from "./components/GoogleComponent";
-import AppleComponent from "./components/AppleComponent";
-import AmazonComponent from "./components/AmazonComponent";
 
+
+const ColorfulComponent = ({ color = 'blue' }) => {
+  return (
+    <div style={{ color: color}}>
+      <h1>This component is {color}!</h1>
+    </div>
+  );
+}
+
+
+ 
 const App = () => {
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" , fontSize: "24px" , color: "blue"}}>
-      <GoogleComponent />
-      <AppleComponent />
-      <AmazonComponent />
-    </div>
+    <>
+      <ColorfulComponent color='blue' />
+      <ColorfulComponent color='red' />
+      <ColorfulComponent color='green' />
+      <ColorfulComponent/>
+    </>
   );
 };
 
