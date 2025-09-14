@@ -1,23 +1,18 @@
+import Header from "./components/Header/Header";
+import Title from "./components/Title/Title";
+import Footer from "./components/Footer/Footer";
+import PropertyList from "./components/PropertyList/PropertyList";
 
-
-const ColorfulComponent = ({ color = 'blue' }) => {
-  return (
-    <div style={{ color: color}}>
-      <h1>This component is {color}!</h1>
-    </div>
-  );
-}
-
-
- 
 const App = () => {
   return (
-    <>
-      <ColorfulComponent color='blue' />
-      <ColorfulComponent color='red' />
-      <ColorfulComponent color='green' />
-      <ColorfulComponent/>
-    </>
+    <div>
+      <Header />
+      <main>
+        <Title />
+        <PropertyList />
+      </main>
+      <Footer />
+    </div>
   );
 };
 
