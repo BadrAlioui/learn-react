@@ -1,7 +1,11 @@
-import './Title.css';
+import "./Title.css";
 
 const Title = () => {
-  return <h1>Property Listings</h1>;
+  return (
+    <div className="title-section">
+      <h1>Properties For Rent</h1>
+    </div>
+  );
 };
 
 export default Title;

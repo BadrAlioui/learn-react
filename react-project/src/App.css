@@ -9,3 +9,14 @@ body {
   color: #333;
   height: 100%;
 }
+
+.app {
+margin-top: 4rem;
+}
+
+
+@media (max-width: 800px) {
+  .app {
+    margin-top: 10rem;
+  }
+}
