@@ -12,7 +12,7 @@ const App = () => {
         <Title />
         <PropertyList />
       </main>
-      <Footer />
+      <Footer className="footer" />
     </div>
   );
 };
